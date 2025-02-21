@@ -6,34 +6,48 @@ export interface Project {
   description: string;
   technologies: string[];
   link?: string;
+  repoLink?: string;
 }
 export const projects: Project[] = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "Social Media boosting Platform",
     category: "Web Development",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
-    description: "A modern e-commerce solution built with React and Node.js",
-    technologies: ["React", "Node.js", "MongoDB", "Express"],
-    link: "https://example.com",
+    description: "A modern social media boosting solution built with React.",
+    technologies: ["React", "Javascript", "Redux", "Tailwind CSS", "APIs"],
+    link: "https://igcarts.com",
   },
   {
     id: 2,
-    title: "Mobile Banking App",
+    title: "Restaurant App",
     category: "Mobile Development",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-    description: "Secure and intuitive mobile banking application",
-    technologies: ["React Native", "TypeScript", "Redux", "Firebase"],
-    link: "https://example.com",
+    image: "",
+    description:
+      "Trying to build a restaurant app as part of my learning journey on react native",
+    technologies: ["React Native", "TypeScript", "Redux"],
+    link: "",
   },
   {
     id: 3,
     title: "Portfolio Website",
     category: "Web Development",
-    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
+    image: "/portfoliocode.jpg",
     description: "Responsive portfolio website with modern animations",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     link: "https://example.com",
+    repoLink: "https://github.com/Dapious99/omotosho-kamalideen.git",
+  },
+  {
+    id: 4,
+    title: "Forepreneur Hangout Website",
+    category: "Web Development",
+    image: "/forexpreneur.jpg",
+    description:
+      "A mini-website with little integration to handle users voting and ticket buying for an event",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "APIs"],
+    link: "https://forexpreneur-handout-fden.vercel.app/",
+    repoLink: "",
   },
 ];
 export interface Experience {
@@ -46,19 +60,19 @@ export interface Experience {
 export const experiences: Experience[] = [
   {
     id: 1,
-    role: "Senior Frontend Developer",
-    company: "Tech Solutions Inc.",
-    duration: "2021 - Present",
+    role: "Frontend Developer",
+    company: "Echobitstech",
+    duration: "June, 2024 - Dec., 2024",
     description: [
-      "Led a team of 5 developers in building enterprise web applications",
-      "Implemented modern frontend architecture using React and TypeScript",
+      "Led a team of 3 frontend developers in building enterprise web applications",
+      "Implemented modern frontend architecture using Angular and TypeScript",
       "Reduced loading times by 40% through optimization techniques",
     ],
   },
   {
     id: 2,
     role: "Mobile Developer",
-    company: "Mobile Innovations",
+    company: "Learning & Freelancing",
     duration: "2019 - 2021",
     description: [
       "Developed cross-platform mobile applications using React Native",

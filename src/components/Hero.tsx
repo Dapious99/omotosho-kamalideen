@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -15,7 +17,7 @@ const Hero = () => {
           </span>
           <h1 className="font-playfair text-5xl md:text-7xl font-bold mb-6 relative overflow-hidden">
             <span className="block animate-text-reveal">
-              Creative Developer
+              I'm Omotosho Kamalideen
             </span>
           </h1>
           <p className="font-inter text-gray-600 max-w-2xl mx-auto mb-8 animate-fade-up">

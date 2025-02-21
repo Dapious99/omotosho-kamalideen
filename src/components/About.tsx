@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { motion } from "framer-motion";
 import { User, Code, Globe } from "lucide-react";
@@ -5,7 +7,7 @@ const About = () => {
   const skills = [
     { name: "Frontend Development", level: 90 },
     { name: "Mobile Development", level: 85 },
-    { name: "UI/UX Design", level: 80 },
+    // { name: "UI/UX Design", level: 80 },
   ];
   return (
     <section className="py-20 bg-white">
@@ -70,7 +72,7 @@ const About = () => {
                     initial={{ width: 0 }}
                     whileInView={{ width: `${skill.level}%` }}
                     transition={{ duration: 1, delay: 0.5 }}
-                    className="h-full bg-gold"
+                    className="h-full bg-blue-800"
                   />
                 </div>
               </motion.div>
