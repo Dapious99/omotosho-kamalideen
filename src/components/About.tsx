@@ -6,7 +6,7 @@ import { User, Code, Globe } from "lucide-react";
 const About = () => {
   const skills = [
     { name: "Frontend Development", level: 90 },
-    { name: "Mobile Development", level: 85 },
+    { name: "Mobile Development", level: 20 },
     // { name: "UI/UX Design", level: 80 },
   ];
   return (
@@ -25,19 +25,19 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             {[
               {
-                icon: <User className="w-8 h-8 mb-4 text-gold" />,
+                icon: <User className="w-8 h-8 mb-4 text-[#D4AF37]" />,
                 title: "Background",
                 description:
-                  "5+ years of experience in web and mobile development",
+                  "2+ years of experience in web and mobile development",
               },
               {
-                icon: <Code className="w-8 h-8 mb-4 text-gold" />,
+                icon: <Code className="w-8 h-8 mb-4 text-[#C9A000]" />,
                 title: "Expertise",
                 description:
                   "Specialized in React, React Native, and TypeScript",
               },
               {
-                icon: <Globe className="w-8 h-8 mb-4 text-gold" />,
+                icon: <Globe className="w-8 h-8 mb-4 text-[#D4AF37]" />,
                 title: "Focus",
                 description: "Building scalable and performant applications",
               },
@@ -72,7 +72,7 @@ const About = () => {
                     initial={{ width: 0 }}
                     whileInView={{ width: `${skill.level}%` }}
                     transition={{ duration: 1, delay: 0.5 }}
-                    className="h-full bg-blue-800"
+                    className="h-full bg-[#D4AF37]"
                   />
                 </div>
               </motion.div>

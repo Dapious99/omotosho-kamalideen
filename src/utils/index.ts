@@ -61,6 +61,20 @@ export const experiences: Experience[] = [
   {
     id: 1,
     role: "Frontend Developer",
+    company: "Igcarts",
+    duration: "Jan., 2024 - Present",
+    description: [
+      "Part of a team of 4 developers that build the igcarts social media boosting solution",
+      "Implemented modern frontend architecture using React and JavaScript",
+      "Solely responsible for the frontned codebase maintenanace and fixing bugs",
+      "Reduced loading times by 60% through optimization techniques",
+      "Increased administrative efficiency by 50% by creating more needed interface and functionality",
+      "Integrated with APIs to communicate data from with the backend service",
+    ],
+  },
+  {
+    id: 2,
+    role: "Frontend Developer",
     company: "Echobitstech",
     duration: "June, 2024 - Dec., 2024",
     description: [
@@ -70,14 +84,14 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     role: "Mobile Developer",
     company: "Learning & Freelancing",
     duration: "2019 - 2021",
     description: [
-      "Developed cross-platform mobile applications using React Native",
-      "Implemented complex animations and gestures",
-      "Collaborated with UX team to improve app usability",
+      // "Developed cross-platform mobile applications using React Native",
+      // "Implemented complex animations and gestures",
+      // "Collaborated with UX team to improve app usability",
     ],
   },
 ];

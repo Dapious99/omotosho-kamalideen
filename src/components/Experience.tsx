@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 import { motion } from "framer-motion";
@@ -25,7 +25,7 @@ const Experience = () => {
                     <h3 className="text-xl font-bold text-gray-900">
                       {exp.role}
                     </h3>
-                    <p className="text-gold font-medium">{exp.company}</p>
+                    <p className="text-[#C9A000] font-medium">{exp.company}</p>
                   </div>
                   <span className="text-gray-500 mt-2 md:mt-0">
                     {exp.duration}
