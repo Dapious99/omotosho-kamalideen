@@ -17,11 +17,11 @@ const Hero = () => {
           </span>
           <h1 className="font-playfair text-5xl md:text-7xl font-bold mb-6 relative overflow-hidden">
             <span className="block animate-text-reveal">
-              I'm Omotosho Kamalideen
+              I&apos;m Omotosho Kamalideen
             </span>
           </h1>
           <p className="font-inter text-gray-600 max-w-2xl mx-auto mb-8 animate-fade-up">
-            Crafting digital experiences with passion and precision.
+            I love Crafting digital experiences with passion and precision.
             Specializing in modern web development and creative solutions.
           </p>
           <motion.button

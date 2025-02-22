@@ -13,7 +13,8 @@ export const projects: Project[] = [
     id: 1,
     title: "Social Media boosting Platform",
     category: "Web Development",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+    // image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+    image: "/igcarts.jpg",
     description: "A modern social media boosting solution built with React.",
     technologies: ["React", "Javascript", "Redux", "Tailwind CSS", "APIs"],
     link: "https://igcarts.com",
@@ -69,7 +70,7 @@ export const experiences: Experience[] = [
       "Solely responsible for the frontned codebase maintenanace and fixing bugs",
       "Reduced loading times by 60% through optimization techniques",
       "Increased administrative efficiency by 50% by creating more needed interface and functionality",
-      "Integrated with APIs to communicate data from with the backend service",
+      "Integrated with APIs to communicate data with the backend service",
     ],
   },
   {
@@ -87,7 +88,7 @@ export const experiences: Experience[] = [
     id: 3,
     role: "Mobile Developer",
     company: "Learning & Freelancing",
-    duration: "2019 - 2021",
+    duration: "2025 - ",
     description: [
       // "Developed cross-platform mobile applications using React Native",
       // "Implemented complex animations and gestures",

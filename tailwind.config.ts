@@ -7,10 +7,11 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    fontFamily: {
-      playfair: ["Playfair", "sans-serif"],
-    },
     extend: {
+      fontFamily: {
+        playfair: ["Playfair", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
