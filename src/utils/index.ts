@@ -96,3 +96,5 @@ export const experiences: Experience[] = [
     ],
   },
 ];
+
+export const currentYear = new Date().getFullYear();
