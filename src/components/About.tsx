@@ -34,12 +34,13 @@ const About = () => {
                 icon: <Code className="w-8 h-8 mb-4 text-[#C9A000]" />,
                 title: "Expertise",
                 description:
-                  "Specialized in React, React Native, and TypeScript",
+                  "Specialized in React/Nextjs, JavaScript, TypeScript, Git and Github, React Native, Angular, Tailwind CSS, Redux, React Query and more...",
               },
               {
                 icon: <Globe className="w-8 h-8 mb-4 text-[#D4AF37]" />,
                 title: "Focus",
-                description: "Building scalable and performant applications",
+                description:
+                  "Building scalable, aesthetic and performant applications",
               },
             ].map((item, index) => (
               <motion.div
