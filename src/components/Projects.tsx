@@ -13,12 +13,12 @@ const Projects = () => {
   );
   return (
     <section className="py-20 bg-white">
-      <div className="container mx-auto px-12">
+      <div className="container mx-auto px-6 md:px-12">
         <h2 className="font-playfair text-4xl font-bold text-center mb-12">
           Featured Projects
         </h2>
 
-        <div className="flex justify-center gap-4 mb-12">
+        <div className="flex justify-center flex-wrap gap-4 mb-12">
           {categories.map((category) => (
             <button
               key={category}
