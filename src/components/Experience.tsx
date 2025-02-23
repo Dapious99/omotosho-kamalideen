@@ -6,7 +6,7 @@ import { experiences } from "@/utils";
 const Experience = () => {
   return (
     <section className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-12">
         <h2 className="font-playfair text-4xl font-bold text-center mb-12">
           Experience
         </h2>
