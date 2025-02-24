@@ -21,6 +21,9 @@ const Hero = () => {
               I&apos;m Omotosho Kamalideen
             </span>
           </h1>
+          <span className="block animate-text-reveal">
+            I&apos;m a Frontend Developer
+          </span>
           <p className="font-inter text-gray-600 max-w-2xl mx-auto mb-8 animate-fade-up">
             I love Crafting digital experiences with passion and precision.
             Specializing in modern web development and creative solutions.
