@@ -9,6 +9,7 @@ import Projects from "@/components/Projects";
 import { currentYear } from "@/utils";
 import { ArrowBigUp, Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import Contact from "@/components/Contact";
 
 const FloatingCircles = () => {
   const circles = Array.from({ length: 15 });
@@ -72,7 +73,10 @@ export default function Home() {
       <FloatingCircles />
       <nav className="fixed w-full z-40 bg-[#D4AF37] px-6 md:px-12 py-4">
         <div className="container mx-auto flex items-center justify-between">
-          <Link href="/" className="font-agbalumo text-xl font-bold">
+          <Link
+            href="/"
+            className="font-agbalumo text-2xl md:text-3xl font-bold"
+          >
             Kodewarlock
           </Link>
 
@@ -131,7 +135,9 @@ export default function Home() {
       <section id="experience">
         <Experience />
       </section>
-      <section id="contact"></section>
+      <section id="contact">
+        <Contact />
+      </section>
       <footer className="text-[#C9A000] container mx-auto px-6 md:px-12 py-2 border-t border-t-[#C9A000] inline-flex justify-between items-center">
         &#169; Copyright {currentYear} | Kodewarlock{" "}
         <Link href="#kodewarlock" className="border border-[#C9A000] p-3">
