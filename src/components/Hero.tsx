@@ -30,7 +30,7 @@ const Hero = () => {
               href="#"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-black text-white font-inter px-8 py-3 rounded-full hover:py-4 hover:bg-gray-700 transition-colors"
+              className="bg-black text-white font-inter px-4 md:px-8 py-3 rounded-full hover:py-4 hover:bg-gray-700 transition-colors"
             >
               View CV
             </a>
@@ -38,7 +38,7 @@ const Hero = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-black text-white font-inter px-8 py-3 rounded-full hover:bg-gray-700 transition-colors"
+                className="bg-black text-white font-inter px-4 md:px-8 py-3 rounded-full hover:bg-gray-700 transition-colors"
               >
                 View My Work
               </motion.button>
