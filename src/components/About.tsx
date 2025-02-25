@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 import { User, Code, Globe } from "lucide-react";
 const About = () => {
   const skills = [
-    { name: "Frontend Development", level: 90 },
+    { name: "Frontend Development", level: 95 },
     { name: "Mobile Development", level: 20 },
-    // { name: "UI/UX Design", level: 80 },
+    { name: "UI/UX Principles", level: 50 },
   ];
   return (
     <section className="py-20 bg-white">
