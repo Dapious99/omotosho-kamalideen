@@ -7,7 +7,7 @@ const About = () => {
   const skills = [
     { name: "Frontend Development", level: 95 },
     { name: "Mobile Development", level: 20 },
-    { name: "UI/UX Principles", level: 50 },
+    { name: "UI/UX Principles", level: 80 },
   ];
   return (
     <section className="py-20 bg-white">
