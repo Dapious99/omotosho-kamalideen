@@ -109,7 +109,7 @@ export default function Home() {
           >
             <Link
               href="/"
-              className="font-cursive text-[#ECAAFB] text-2xl md:text-3xl font-bold"
+              className="font-cursive text-[#B4A2F6] text-2xl md:text-3xl font-bold"
             >
               Kodewarlock
             </Link>
@@ -203,10 +203,10 @@ export default function Home() {
       <section id="contact">
         <Contact />
       </section>
-      <footer className="text-[#B4A2F6] w-full px-6 md:px-12 py-2 border-t border-t-[#ECAAFB] ">
+      <footer className="text-[#B4A2F6] w-full px-6 md:px-12 py-2 border-t border-t-[#B4A2F6]">
         <div className="container mx-auto inline-flex justify-between items-center">
           &#169; Copyright {currentYear} | Kodewarlock{" "}
-          <Link href="#kodewarlock" className="border border-[#ECAAFB] p-3">
+          <Link href="#kodewarlock" className="border border-[#B4A2F6] p-3">
             <ArrowBigUp size={30} />
           </Link>
         </div>

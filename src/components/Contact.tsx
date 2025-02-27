@@ -12,19 +12,19 @@ const Contact = () => {
           transition={{ duration: 0.8 }}
           className="space-y-6"
         >
-          <div className="flex items-center justify-between pb-4">
-            <p className="font-playfair text-xl text-[#ECAAFB] md:text-2xl">
+          <div className="text-center">
+            <p className="font-playfair text-xl text-[#B4A2F6] md:text-2xl">
               Get in touch
             </p>
-            <a href="mailto:dapious99@gmail.com">
-              <motion.button className="text-white bg-[#ECAAFB] rounded-full font-inter px-12 md:px-20 py-3 hover:bg- transition-colors">
+            <p className="font-playfair text-lg text-justify md:text-6xl mt-4 text-[#B4A2F6]">
+              Feel free to reach out for questions, quotes, or collaborations.
+            </p>
+            <a href="mailto:dapious99@gmail.com" className="">
+              <motion.button className="text-white bg-[#B4A2F6] mt-4 rounded-full font-inter px-12 md:px-20 py-3 hover:bg- transition-colors">
                 Say Hi!
               </motion.button>
             </a>
           </div>
-          <p className="font-playfair text-lg text-justify md:text-6xl text-[#B4A2F6]">
-            Feel free to reach out for questions, quotes, or collaborations.
-          </p>
           <div className="flex gap-4 md:gap-10 flex-col md:flex-row">
             <div className="flex flex-col gap-4 text-[#B4A2F6] text-lg md:text-2xl font-medium">
               <p className="text-black text-xl md:text-3xl font-semibold">

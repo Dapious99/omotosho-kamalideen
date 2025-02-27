@@ -18,7 +18,7 @@ const About = () => {
           transition={{ duration: 0.8 }}
           className="max-w-4xl mx-auto"
         >
-          <h2 className="font-playfair text-4xl text-[#ECAAFB] font-bold text-center mb-12">
+          <h2 className="font-playfair text-4xl text-[#B4A2F6] font-bold text-center mb-12">
             About Me
           </h2>
 

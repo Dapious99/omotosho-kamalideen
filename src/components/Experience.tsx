@@ -7,7 +7,7 @@ const Experience = () => {
   return (
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-6 md:px-12">
-        <h2 className="font-playfair text-[#ECAAFB] text-4xl font-bold text-center mb-12">
+        <h2 className="font-playfair text-[#B4A2F6] text-4xl font-bold text-center mb-12">
           Experience
         </h2>
         <div className="max-w-4xl mx-auto">
