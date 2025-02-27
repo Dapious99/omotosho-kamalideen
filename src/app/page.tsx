@@ -70,49 +70,60 @@ export default function Home() {
 
   return (
     <div className="bg-white relative">
-      <FloatingCircles />
-      <nav className="fixed w-full z-40 bg-[#D4AF37] px-6 md:px-12 py-4">
+      {/* <FloatingCircles /> */}
+      <nav className="fixed w-full z-40 drop-shadow-sm bg-white px-6 md:px-12 py-4">
         <div className="container mx-auto flex items-center justify-between">
-          <Link
+          {/* <Link
             href="/"
-            className="font-agbalumo text-2xl md:text-3xl font-bold"
+            className="font-agbalumo text-[#ECAAFB] text-2xl md:text-3xl font-bold"
           >
             Kodewarlock
-          </Link>
+          </Link> */}
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: [0, -5, 0] }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              repeatType: "reverse",
+              ease: "easeInOut",
+            }}
+          >
+            <Link
+              href="/"
+              className="font-agbalumo text-[#ECAAFB] text-2xl md:text-3xl font-bold"
+            >
+              Kodewarlock
+            </Link>
+          </motion.div>
 
           <div
             onClick={() => setToggle(false)}
             className={`${
               toggle
-                ? "text-lg font-semibold pl-6 pt-4 pb-8 md:hidden flex flex-col gap-4 absolute w-[80%] left-0 top-16 bg-[#D4AF37]"
+                ? "text-lg font-semibold pl-6 pt-4 pb-8 md:hidden flex flex-col gap-4 absolute w-[80%] left-0 top-16 bg-white shadow"
                 : "hidden font-semibold md:text-xl md:block space-x-6"
             }`}
           >
-            <Link href="#intro" className="text-gray-500 hover:text-gray-600">
+            <Link href="#intro" className="text-[#B4A2F6]">
               Intro
             </Link>
-            <Link href="#about" className="text-gray-500 hover:text-gray-600">
+            <Link href="#about" className="text-[#B4A2F6]">
               About
             </Link>
-            <Link
-              href="#projects"
-              className="text-gray-500 hover:text-gray-600"
-            >
+            <Link href="#projects" className="text-[#B4A2F6]">
               Works
             </Link>
-            <Link
-              href="#experience"
-              className="text-gray-500 hover:text-gray-600"
-            >
+            <Link href="#experience" className="text-[#B4A2F6]">
               Experience
             </Link>
-            <Link href="#contact" className="text-gray-500 hover:text-gray-600">
+            <Link href="#contact" className="text-[#B4A2F6]">
               Contact
             </Link>
           </div>
           <div
-            className={`text-white p-2 md:hidden ${
-              toggle ? "bg-[#D4AF37] hover:bg-[#C9A000]" : ""
+            className={`text-black p-2 md:hidden ${
+              toggle ? "bg-white hover:bg-white" : ""
             } rounded-full transition-colors`}
             onClick={handleToggle}
           >
@@ -127,11 +138,11 @@ export default function Home() {
       <section id="about">
         <About />
       </section>
-      <FloatingCircles />
+      {/* <FloatingCircles /> */}
       <section id="projects">
         <Projects />
       </section>
-      <FloatingCircles />
+      {/* <FloatingCircles /> */}
       <section id="experience">
         <Experience />
       </section>

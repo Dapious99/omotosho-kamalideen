@@ -18,11 +18,30 @@ const About = () => {
           transition={{ duration: 0.8 }}
           className="max-w-4xl mx-auto"
         >
-          <h2 className="font-playfair text-4xl font-bold text-center mb-12">
+          <h2 className="font-playfair text-4xl text-[#ECAAFB] font-bold text-center mb-12">
             About Me
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            className="text-center mb-4"
+          >
+            <h3 className="text-2xl font-medium text-[#C9A000]">Expertise</h3>
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="text-lg md:text-xl mt-2 font-bold"
+            >
+              Specialized in React/Nextjs, JavaScript, TypeScript, Git and
+              Github, React Native, Angular, Tailwind CSS, Redux, React Query
+              and more...
+            </motion.p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             {[
               {
                 icon: <User className="w-8 h-8 mb-4 text-[#D4AF37]" />,
@@ -33,8 +52,7 @@ const About = () => {
               {
                 icon: <Code className="w-8 h-8 mb-4 text-[#C9A000]" />,
                 title: "Expertise",
-                description:
-                  "Specialized in React/Nextjs, JavaScript, TypeScript, Git and Github, React Native, Angular, Tailwind CSS, Redux, React Query and more...",
+                description: "",
               },
               {
                 icon: <Globe className="w-8 h-8 mb-4 text-[#D4AF37]" />,

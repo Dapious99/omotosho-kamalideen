@@ -13,7 +13,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="text-center"
         >
-          <span className="text-[#C9A000] font-inter text-sm tracking-wider uppercase mb-4 block animate-fade-up">
+          <span className="text-[#B4A2F6] font-inter text-sm tracking-wider uppercase mb-4 block animate-fade-up">
             Welcome to my portfolio
           </span>
           <h1 className="font-playfair text-5xl md:text-7xl font-bold mb-6">
