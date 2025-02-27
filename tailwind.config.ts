@@ -12,6 +12,7 @@ const config: Config = {
       inter: ["Inter", "sans-serif"],
       // agbalumo: ["Agbalumo", "sans-serif"],
       poppins: ["Poppins", "cursive"],
+      cursive: ["cursive", "sans-serif"],
     },
     extend: {
       animation: {

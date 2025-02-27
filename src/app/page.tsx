@@ -109,7 +109,7 @@ export default function Home() {
           >
             <Link
               href="/"
-              className="font-poppins text-[#ECAAFB] text-2xl md:text-3xl font-bold"
+              className="font-cursive text-[#ECAAFB] text-2xl md:text-3xl font-bold"
             >
               Kodewarlock
             </Link>

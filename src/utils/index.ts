@@ -11,7 +11,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
-    title: "Social Media boosting Platform",
+    title: "Social Media boosting Platform (Igcarts)",
     category: "Web Development",
     // image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
     image: "/igcartsss.jpg",
@@ -41,11 +41,41 @@ export const projects: Project[] = [
   },
   {
     id: 4,
+    title: "Quiz App",
+    category: "Web Development",
+    image: "/quiz-me.jpg",
+    description:
+      "A quiz and history application that sums score and show incorrect answer",
+    technologies: ["React", "JavaScript", "Tailwind CSS"],
+    link: "https://quiz-me.surge.sh/",
+    repoLink: "https://github.com/Dapious99/quizMe.git",
+  },
+  {
+    id: 5,
+    title: "Edtech Platform (Stemmets)",
+    category: "Web Development",
+    // image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
+    image: "/stemmets.jpg",
+    description:
+      "A modern learning platform for kids between the age of 3 - 13years built with React.",
+    technologies: [
+      "React",
+      "Javascript",
+      "Redux",
+      "Tailwind CSS",
+      "APIs",
+      "AntD",
+    ],
+    link: "https://stemmets.com",
+    repoLink: "",
+  },
+  {
+    id: 6,
     title: "Forepreneur Hangout Website",
     category: "Web Development",
     image: "/forexpreneurr.jpg",
     description:
-      "A mini-website with little integration to handle users voting and ticket buying for an event",
+      "A mini-webapp with little integration to handle users voting and ticket buying for an event",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "APIs"],
     link: "https://forexpreneur-handout-fden.vercel.app/",
     repoLink: "",

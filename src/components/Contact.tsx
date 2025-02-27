@@ -21,18 +21,18 @@ const Contact = () => {
               </motion.button>
             </a>
           </div>
-          <p className="font-playfair text-2xl text-justify md:text-6xl text-[#B4A2F6]">
+          <p className="font-playfair text-lg text-justify md:text-6xl text-[#B4A2F6]">
             Feel free to reach out for questions, quotes, or collaborations.
           </p>
           <div className="flex gap-4 md:gap-10 flex-col md:flex-row">
-            <div className="flex flex-col gap-4 text-[#B4A2F6] text-xl md:text-2xl font-medium">
+            <div className="flex flex-col gap-4 text-[#B4A2F6] text-lg md:text-2xl font-medium">
               <p className="text-black text-xl md:text-3xl font-semibold">
                 Reach me at
               </p>
               <a href="mailto:dapious99@gmail.com">dapious99@gmail.com</a>
               <a href="tel:+2348110792758">+2348110792758</a>
             </div>
-            <div className="text-xl md:text-2xl font-medium">
+            <div className="text-lg md:text-2xl font-medium">
               <p className="text-black text-xl md:text-3xl mb-4 font-semibold">
                 Socials
               </p>
