@@ -69,7 +69,7 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-white relative overflow-hidden">
+    <div className="bg-white relative">
       <FloatingCircles />
       <nav className="fixed w-full z-40 bg-[#D4AF37] px-6 md:px-12 py-4">
         <div className="container mx-auto flex items-center justify-between">
@@ -81,7 +81,7 @@ export default function Home() {
           </Link>
 
           <div
-            onClick={handleToggle}
+            onClick={() => setToggle(false)}
             className={`${
               toggle
                 ? "text-lg font-semibold pl-6 pt-4 pb-8 md:hidden flex flex-col gap-4 absolute w-[80%] left-0 top-16 bg-[#D4AF37]"
