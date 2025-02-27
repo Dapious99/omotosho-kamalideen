@@ -203,11 +203,13 @@ export default function Home() {
       <section id="contact">
         <Contact />
       </section>
-      <footer className="text-[#C9A000] container mx-auto px-6 md:px-12 py-2 border-t border-t-[#C9A000] inline-flex justify-between items-center">
-        &#169; Copyright {currentYear} | Kodewarlock{" "}
-        <Link href="#kodewarlock" className="border border-[#C9A000] p-3">
-          <ArrowBigUp size={30} />
-        </Link>
+      <footer className="text-[#B4A2F6] w-full px-6 md:px-12 py-2 border-t border-t-[#ECAAFB] ">
+        <div className="container mx-auto inline-flex justify-between items-center">
+          &#169; Copyright {currentYear} | Kodewarlock{" "}
+          <Link href="#kodewarlock" className="border border-[#ECAAFB] p-3">
+            <ArrowBigUp size={30} />
+          </Link>
+        </div>
       </footer>
     </div>
   );
