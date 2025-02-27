@@ -51,8 +51,9 @@ const About = () => {
               },
               {
                 icon: <Code className="w-8 h-8 mb-4 text-[#C9A000]" />,
-                title: "Expertise",
-                description: "",
+                title: "Development Approach",
+                description:
+                  "Focused on building user-friendly, high-performance applications with a strong emphasis on scalability, maintainability, and UI/UX best practices.",
               },
               {
                 icon: <Globe className="w-8 h-8 mb-4 text-[#D4AF37]" />,
