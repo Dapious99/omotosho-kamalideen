@@ -27,13 +27,14 @@ const Hero = () => {
             and creative solutions.
           </p>
           <div className="flex gap-3 justify-center">
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-black text-white font-inter px-4 md:px-8 py-3 rounded-full hover:py-4 hover:bg-gray-700 transition-colors"
-            >
-              View CV
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-black text-white font-inter px-4 md:px-8 py-3 rounded-full hover:bg-gray-700 transition-colors"
+              >
+                View CV
+              </motion.button>{" "}
             </a>
             <Link href="#projects">
               <motion.button
