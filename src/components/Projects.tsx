@@ -14,7 +14,7 @@ const Projects = () => {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-6 md:px-12">
-        <h2 className="font-playfair text-4xl font-bold text-center mb-12">
+        <h2 className="font-playfair text-[#ECAAFB] text-4xl font-bold text-center mb-12">
           Featured Projects
         </h2>
 

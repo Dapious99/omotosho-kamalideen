@@ -11,7 +11,7 @@ const config: Config = {
       playfair: ["Playfair Display", "serif"],
       inter: ["Inter", "sans-serif"],
       // agbalumo: ["Agbalumo", "sans-serif"],
-      agbalumo: ["Agbalumo", "cursive"],
+      poppins: ["Poppins", "cursive"],
     },
     extend: {
       animation: {

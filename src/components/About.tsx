@@ -28,7 +28,7 @@ const About = () => {
             transition={{ duration: 0.5 }}
             className="text-center mb-4"
           >
-            <h3 className="text-2xl font-medium text-[#C9A000]">Expertise</h3>
+            <h3 className="text-2xl font-medium text-[#B4A2F6]">Expertise</h3>
             <motion.p
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -44,19 +44,19 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             {[
               {
-                icon: <User className="w-8 h-8 mb-4 text-[#D4AF37]" />,
+                icon: <User className="w-8 h-8 mb-4 text-[#B4A2F6]" />,
                 title: "Background",
                 description:
                   "4+ years of experience in web and mobile development",
               },
               {
-                icon: <Code className="w-8 h-8 mb-4 text-[#C9A000]" />,
+                icon: <Code className="w-8 h-8 mb-4 text-[#B4A2F6]" />,
                 title: "Development Approach",
                 description:
                   "Focused on building user-friendly, high-performance applications with a strong emphasis on scalability, maintainability, and UI/UX best practices.",
               },
               {
-                icon: <Globe className="w-8 h-8 mb-4 text-[#D4AF37]" />,
+                icon: <Globe className="w-8 h-8 mb-4 text-[#B4A2F6]" />,
                 title: "Focus",
                 description:
                   "Building scalable, aesthetic and performant applications",
@@ -92,7 +92,7 @@ const About = () => {
                     initial={{ width: 0 }}
                     whileInView={{ width: `${skill.level}%` }}
                     transition={{ duration: 1, delay: 0.5 }}
-                    className="h-full bg-[#D4AF37]"
+                    className="h-full bg-[#B4A2F6]"
                   />
                 </div>
               </motion.div>

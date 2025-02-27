@@ -51,6 +51,30 @@ import Contact from "@/components/Contact";
 
 export default function Home() {
   const [toggle, setToggle] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ["home", "about", "projects", "experience", "contact"];
+      const scrollPosition = window.scrollY;
+
+      sections.forEach((section) => {
+        const element = document.getElementById(section);
+        if (element) {
+          const offset = element.offsetTop - 80;
+          const height = element.offsetHeight;
+
+          if (scrollPosition >= offset && scrollPosition < offset + height) {
+            setActiveSection(section);
+          }
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   useEffect(() => {
     if (toggle) {
       document.body.style.overflow = "hidden";
@@ -73,12 +97,6 @@ export default function Home() {
       {/* <FloatingCircles /> */}
       <nav className="fixed w-full z-40 drop-shadow-sm bg-white px-6 md:px-12 py-4">
         <div className="container mx-auto flex items-center justify-between">
-          {/* <Link
-            href="/"
-            className="font-agbalumo text-[#ECAAFB] text-2xl md:text-3xl font-bold"
-          >
-            Kodewarlock
-          </Link> */}
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: [0, -5, 0] }}
@@ -91,7 +109,7 @@ export default function Home() {
           >
             <Link
               href="/"
-              className="font-agbalumo text-[#ECAAFB] text-2xl md:text-3xl font-bold"
+              className="font-poppins text-[#ECAAFB] text-2xl md:text-3xl font-bold"
             >
               Kodewarlock
             </Link>
@@ -105,19 +123,55 @@ export default function Home() {
                 : "hidden font-semibold md:text-xl md:block space-x-6"
             }`}
           >
-            <Link href="#intro" className="text-[#B4A2F6]">
-              Intro
+            <Link
+              href="#home"
+              className={`hover:text-[#B4A2F6] transition-colors ${
+                activeSection === "home"
+                  ? "text-[#B4A2F6] font-bold"
+                  : "text-gray-700 "
+              }`}
+            >
+              Home
             </Link>
-            <Link href="#about" className="text-[#B4A2F6]">
+
+            <Link
+              href="#about"
+              className={`hover:text-[#B4A2F6] transition-colors ${
+                activeSection === "about"
+                  ? "text-[#B4A2F6] font-bold"
+                  : "text-gray-700"
+              }`}
+            >
               About
             </Link>
-            <Link href="#projects" className="text-[#B4A2F6]">
+            <Link
+              href="#projects"
+              className={`hover:text-[#B4A2F6] transition-colors ${
+                activeSection === "projects"
+                  ? "text-[#B4A2F6] font-bold"
+                  : "text-gray-700"
+              }`}
+            >
               Works
             </Link>
-            <Link href="#experience" className="text-[#B4A2F6]">
+            <Link
+              href="#experience"
+              className={`hover:text-[#B4A2F6] transition-colors ${
+                activeSection === "experience"
+                  ? "text-[#B4A2F6] font-bold"
+                  : "text-gray-700"
+              }`}
+            >
               Experience
             </Link>
-            <Link href="#contact" className="text-[#B4A2F6]">
+            <Link
+              href="#contact"
+              className={`hover:text-[#B4A2F6] transition-colors ${
+                activeSection === "contact"
+                  ? "text-[#B4A2F6] font-bold"
+                  : "text-gray-700"
+              }`}
+            >
               Contact
             </Link>
           </div>
@@ -132,7 +186,7 @@ export default function Home() {
         </div>
       </nav>
       <div id="kodewarlock"></div>
-      <section id="intro">
+      <section id="home">
         <Hero />
       </section>
       <section id="about">
