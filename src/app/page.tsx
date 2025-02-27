@@ -11,43 +11,43 @@ import { ArrowBigUp, Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import Contact from "@/components/Contact";
 
-const FloatingCircles = () => {
-  const circles = Array.from({ length: 15 });
+// const FloatingCircles = () => {
+//   const circles = Array.from({ length: 15 });
 
-  return (
-    <>
-      {circles.map((_, index) => {
-        const size = Math.random() * 60 + 20;
-        const xStart = Math.random() * 100 + "vw";
-        const yStart = Math.random() * 100 + "vh";
+//   return (
+//     <>
+//       {circles.map((_, index) => {
+//         const size = Math.random() * 60 + 20;
+//         const xStart = Math.random() * 100 + "vw";
+//         const yStart = Math.random() * 100 + "vh";
 
-        return (
-          <motion.div
-            key={index}
-            className="absolute bg-[#C9A000] z-40 rounded-full opacity-50"
-            style={{
-              width: size,
-              height: size,
-            }}
-            initial={{
-              x: xStart,
-              y: yStart,
-            }}
-            animate={{
-              x: ["0vw", "100vw", "50vw", "0vw"],
-              y: ["0vh", "50vh", "100vh", "0vh"],
-            }}
-            transition={{
-              duration: Math.random() * 10 + 5,
-              repeat: Infinity,
-              ease: "linear",
-            }}
-          />
-        );
-      })}
-    </>
-  );
-};
+//         return (
+//           <motion.div
+//             key={index}
+//             className="absolute bg-[#C9A000] z-40 rounded-full opacity-50"
+//             style={{
+//               width: size,
+//               height: size,
+//             }}
+//             initial={{
+//               x: xStart,
+//               y: yStart,
+//             }}
+//             animate={{
+//               x: ["0vw", "100vw", "50vw", "0vw"],
+//               y: ["0vh", "50vh", "100vh", "0vh"],
+//             }}
+//             transition={{
+//               duration: Math.random() * 10 + 5,
+//               repeat: Infinity,
+//               ease: "linear",
+//             }}
+//           />
+//         );
+//       })}
+//     </>
+//   );
+// };
 
 export default function Home() {
   const [toggle, setToggle] = useState(false);
