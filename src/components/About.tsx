@@ -28,7 +28,7 @@ const About = () => {
                 icon: <User className="w-8 h-8 mb-4 text-[#D4AF37]" />,
                 title: "Background",
                 description:
-                  "2+ years of experience in web and mobile development",
+                  "4+ years of experience in web and mobile development",
               },
               {
                 icon: <Code className="w-8 h-8 mb-4 text-[#C9A000]" />,
