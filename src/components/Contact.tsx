@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Github, Instagram, Linkedin, Mail, PhoneCall } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -29,8 +30,18 @@ const Contact = () => {
               <p className="text-black text-xl md:text-3xl font-semibold">
                 Reach me at
               </p>
-              <a href="mailto:dapious99@gmail.com">dapious99@gmail.com</a>
-              <a href="tel:+2348110792758">+2348110792758</a>
+              <a
+                href="mailto:dapious99@gmail.com"
+                className="inline-flex items-center gap-2"
+              >
+                <Mail /> dapious99@gmail.com
+              </a>
+              <a
+                href="tel:+2348110792758"
+                className="inline-flex items-center gap-2"
+              >
+                <PhoneCall /> +2348110792758
+              </a>
             </div>
             <div className="text-lg md:text-2xl font-medium">
               <p className="text-black text-xl md:text-3xl mb-4 font-semibold">
@@ -41,24 +52,35 @@ const Contact = () => {
                   href="https://www.linkedin.com/in/kamalideen-omotosho-a50135270/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2"
                 >
+                  <Linkedin />
                   LinkedIn
                 </a>
                 <a
                   href="https://www.instagram.com/itsdapious/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2"
                 >
+                  <Instagram />
                   Instagram
                 </a>
                 <a
                   href="https://github.com/Dapious99"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2"
                 >
+                  <Github />
                   Github
                 </a>
-                <a href="https://wa.me/+2348110792758" target="_blank">
+                <a
+                  href="https://wa.me/+2348110792758"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2"
+                >
                   Whatsapp
                 </a>
               </div>
