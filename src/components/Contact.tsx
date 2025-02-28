@@ -16,11 +16,11 @@ const Contact = () => {
             <p className="font-playfair text-xl text-[#B4A2F6] md:text-2xl">
               Get in touch
             </p>
-            <p className="font-playfair text-lg text-justify md:text-6xl mt-4 text-[#B4A2F6]">
+            <p className="font-playfair text-lg text-justify md:text-6xl mt-6 text-[#B4A2F6]">
               Feel free to reach out for questions, quotes, or collaborations.
             </p>
             <a href="mailto:dapious99@gmail.com" className="">
-              <motion.button className="text-white bg-[#B4A2F6] mt-4 rounded-full font-inter px-12 md:px-20 py-3 hover:bg- transition-colors">
+              <motion.button className="text-white bg-[#B4A2F6] mt-8 rounded-full font-inter px-12 md:px-20 py-3 hover:bg- transition-colors">
                 Say Hi!
               </motion.button>
             </a>
