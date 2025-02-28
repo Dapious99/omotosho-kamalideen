@@ -54,7 +54,6 @@ export const projects: Project[] = [
     id: 5,
     title: "Edtech Platform (Stemmets)",
     category: "Web Development",
-    // image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
     image: "/stemmets.jpg",
     description:
       "A modern learning platform for kids between the age of 3 - 13years built with React.",
@@ -67,7 +66,6 @@ export const projects: Project[] = [
       "AntD",
     ],
     link: "https://stemmets.com",
-    repoLink: "",
   },
   {
     id: 6,
@@ -78,7 +76,6 @@ export const projects: Project[] = [
       "A mini-webapp with little integration to handle users voting and ticket buying for an event",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "APIs"],
     link: "https://forexpreneur-handout-fden.vercel.app/",
-    repoLink: "",
   },
 ];
 export interface Experience {
