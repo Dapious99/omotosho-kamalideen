@@ -27,7 +27,7 @@ export const projects: Project[] = [
     description:
       "Trying to build a restaurant app as part of my learning journey on react native",
     technologies: ["React Native", "TypeScript", "Redux"],
-    link: "",
+    // link: "",
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ export const projects: Project[] = [
     image: "/portfolio.jpg",
     description: "Responsive portfolio website with modern animations",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    link: "https://example.com",
+    link: "https://omotosho-kamalideen.vercel.app/",
     repoLink: "https://github.com/Dapious99/omotosho-kamalideen.git",
   },
   {
