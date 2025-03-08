@@ -21,13 +21,13 @@ export const projects: Project[] = [
   },
   {
     id: 2,
-    title: "Restaurant App",
-    category: "Mobile Development",
-    image: "",
+    title: "Education Travelling App (Dansam Travels)",
+    category: "Web Development",
+    image: "/dansam.jpg",
     description:
-      "Trying to build a restaurant app as part of my learning journey on react native",
-    technologies: ["React Native", "TypeScript", "Redux"],
-    // link: "",
+      "A website built to handle and assist students travel outside the shores of Nigeria.",
+    technologies: ["NextJS", "TypeScript"],
+    link: "https://www.dansamtravels.com/",
   },
   {
     id: 3,
@@ -76,6 +76,16 @@ export const projects: Project[] = [
       "A mini-webapp with little integration to handle users voting and ticket buying for an event",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "APIs"],
     link: "https://forexpreneur-handout-fden.vercel.app/",
+  },
+  {
+    id: 7,
+    title: "Restaurant App",
+    category: "Mobile Development",
+    image: "",
+    description:
+      "Trying to build a restaurant app as part of my learning journey on react native",
+    technologies: ["React Native", "TypeScript", "Redux"],
+    // link: "",
   },
 ];
 export interface Experience {
