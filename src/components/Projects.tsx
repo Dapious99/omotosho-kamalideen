@@ -32,7 +32,7 @@ const Projects = () => {
               key={category}
               onClick={() => {
                 setSelectedCategory(category);
-                setVisibleCount(6); // Reset when changing categories
+                setVisibleCount(6);
               }}
               className={`px-6 py-2 rounded-full transition-all ${
                 selectedCategory === category
