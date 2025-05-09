@@ -27,7 +27,7 @@ const Hero = () => {
             and creative solutions.
           </p>
           <div className="flex gap-3 justify-center">
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a target="_blank" rel="noopener noreferrer">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}

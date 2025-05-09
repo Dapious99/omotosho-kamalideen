@@ -77,16 +77,16 @@ export const projects: Project[] = [
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "APIs"],
     link: "https://forexpreneur-handout-fden.vercel.app/",
   },
-  {
-    id: 7,
-    title: "Restaurant App",
-    category: "Mobile Development",
-    image: "",
-    description:
-      "Trying to build a restaurant app as part of my learning journey on react native",
-    technologies: ["React Native", "TypeScript", "Redux"],
-    // link: "",
-  },
+  // {
+  //   id: 7,
+  //   title: "Restaurant App",
+  //   category: "Mobile Development",
+  //   image: "",
+  //   description:
+  //     "Trying to build a restaurant app as part of my learning journey on react native",
+  //   technologies: ["React Native", "TypeScript", "Redux"],
+  //   // link: "",
+  // },
 ];
 export interface Experience {
   id: number;
