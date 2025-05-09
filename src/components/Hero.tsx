@@ -27,7 +27,7 @@ const Hero = () => {
             and creative solutions.
           </p>
           <div className="flex gap-3 justify-center">
-            <a target="_blank" rel="noopener noreferrer">
+            <Link href="#experience">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -35,7 +35,7 @@ const Hero = () => {
               >
                 View CV
               </motion.button>{" "}
-            </a>
+            </Link>
             <Link href="#projects">
               <motion.button
                 whileHover={{ scale: 1.05 }}

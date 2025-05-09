@@ -121,17 +121,17 @@ export const experiences: Experience[] = [
       "Reduced loading times by 40% through optimization techniques",
     ],
   },
-  {
-    id: 3,
-    role: "Mobile Developer",
-    company: "Learning & Freelancing",
-    duration: "2025 - ",
-    description: [
-      // "Developed cross-platform mobile applications using React Native",
-      // "Implemented complex animations and gestures",
-      // "Collaborated with UX team to improve app usability",
-    ],
-  },
+  // {
+  //   id: 3,
+  //   role: "Mobile Developer",
+  //   company: "Learning & Freelancing",
+  //   duration: "2025 - ",
+  //   description: [
+  //     // "Developed cross-platform mobile applications using React Native",
+  //     // "Implemented complex animations and gestures",
+  //     // "Collaborated with UX team to improve app usability",
+  //   ],
+  // },
 ];
 
 export const currentYear = new Date().getFullYear();
