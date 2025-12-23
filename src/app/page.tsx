@@ -7,9 +7,10 @@ import Experience from "@/components/Experience";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import { currentYear } from "@/utils";
-import { ArrowBigUp, Menu, X } from "lucide-react";
+import { ArrowUp, Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import Contact from "@/components/Contact";
+import ScrollProgress from "@/components/animations/ScrollProgress";
 
 // const FloatingCircles = () => {
 //   const circles = Array.from({ length: 15 });
@@ -93,25 +94,22 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-white relative">
-      {/* <FloatingCircles /> */}
-      <nav className="fixed w-full z-40 drop-shadow-sm bg-white px-6 md:px-12 py-4">
+    <div className="bg-brutal-white relative">
+      <ScrollProgress />
+      <nav className="fixed w-full z-40 bg-brutal-white border-b-brutal shadow-brutal px-6 md:px-12 py-4">
         <div className="container mx-auto flex items-center justify-between">
           <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: [0, -5, 0] }}
-            transition={{
-              duration: 1,
-              repeat: Infinity,
-              repeatType: "reverse",
-              ease: "easeInOut",
-            }}
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
           >
             <Link
               href="/"
-              className="font-cursive text-[#B4A2F6] text-2xl md:text-3xl font-bold"
+              className="font-space text-2xl md:text-3xl font-bold hover:text-brutal-pink transition-colors"
             >
-              Kodewarlock
+              <span className="bg-brutal-yellow px-3 py-1 border-brutal shadow-brutal inline-block transform hover:-rotate-2 transition-transform">
+                Kodewarlock
+              </span>
             </Link>
           </motion.div>
 
@@ -119,70 +117,87 @@ export default function Home() {
             onClick={() => setToggle(false)}
             className={`${
               toggle
-                ? "text-lg font-semibold pl-6 pt-4 pb-8 md:hidden flex flex-col gap-4 absolute w-[80%] left-0 top-16 bg-white shadow"
-                : "hidden font-semibold md:text-xl md:block space-x-6"
+                ? "text-lg font-space font-bold pl-6 pt-4 pb-8 md:hidden flex flex-col gap-4 absolute w-[80%] left-0 top-16 bg-brutal-white border-brutal shadow-brutal-lg"
+                : "hidden font-space font-bold md:text-lg md:block space-x-6"
             }`}
           >
             <Link
               href="#home"
-              className={`hover:text-[#B4A2F6] transition-colors ${
+              className={`hover:text-brutal-pink transition-colors relative group ${
                 activeSection === "home"
-                  ? "text-[#B4A2F6] font-bold"
-                  : "text-gray-700 "
+                  ? "text-brutal-pink"
+                  : "text-brutal-black"
               }`}
             >
               Home
+              {activeSection === "home" && (
+                <span className="absolute -bottom-1 left-0 w-full h-1 bg-brutal-yellow" />
+              )}
             </Link>
 
             <Link
               href="#about"
-              className={`hover:text-[#B4A2F6] transition-colors ${
+              className={`hover:text-brutal-pink transition-colors relative group ${
                 activeSection === "about"
-                  ? "text-[#B4A2F6] font-bold"
-                  : "text-gray-700"
+                  ? "text-brutal-pink"
+                  : "text-brutal-black"
               }`}
             >
               About
+              {activeSection === "about" && (
+                <span className="absolute -bottom-1 left-0 w-full h-1 bg-brutal-yellow" />
+              )}
             </Link>
             <Link
               href="#projects"
-              className={`hover:text-[#B4A2F6] transition-colors ${
+              className={`hover:text-brutal-pink transition-colors relative group ${
                 activeSection === "projects"
-                  ? "text-[#B4A2F6] font-bold"
-                  : "text-gray-700"
+                  ? "text-brutal-pink"
+                  : "text-brutal-black"
               }`}
             >
               Works
+              {activeSection === "projects" && (
+                <span className="absolute -bottom-1 left-0 w-full h-1 bg-brutal-yellow" />
+              )}
             </Link>
             <Link
               href="#experience"
-              className={`hover:text-[#B4A2F6] transition-colors ${
+              className={`hover:text-brutal-pink transition-colors relative group ${
                 activeSection === "experience"
-                  ? "text-[#B4A2F6] font-bold"
-                  : "text-gray-700"
+                  ? "text-brutal-pink"
+                  : "text-brutal-black"
               }`}
             >
               Experience
+              {activeSection === "experience" && (
+                <span className="absolute -bottom-1 left-0 w-full h-1 bg-brutal-yellow" />
+              )}
             </Link>
             <Link
               href="#contact"
-              className={`hover:text-[#B4A2F6] transition-colors ${
+              className={`hover:text-brutal-pink transition-colors relative group ${
                 activeSection === "contact"
-                  ? "text-[#B4A2F6] font-bold"
-                  : "text-gray-700"
+                  ? "text-brutal-pink"
+                  : "text-brutal-black"
               }`}
             >
               Contact
+              {activeSection === "contact" && (
+                <span className="absolute -bottom-1 left-0 w-full h-1 bg-brutal-yellow" />
+              )}
             </Link>
           </div>
-          <div
-            className={`text-black p-2 md:hidden ${
-              toggle ? "bg-white hover:bg-white" : ""
-            } rounded-full transition-colors`}
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className={`text-brutal-black p-2 md:hidden border-brutal shadow-brutal ${
+              toggle ? "bg-brutal-yellow" : "bg-brutal-white"
+            } transition-colors cursor-pointer`}
             onClick={handleToggle}
           >
-            {!toggle ? <Menu size={30} /> : <X size={30} />}
-          </div>
+            {!toggle ? <Menu size={28} /> : <X size={28} />}
+          </motion.div>
         </div>
       </nav>
       <div id="kodewarlock"></div>
@@ -203,11 +218,19 @@ export default function Home() {
       <section id="contact">
         <Contact />
       </section>
-      <footer className="text-[#B4A2F6] w-full px-6 md:px-12 py-2 border-t border-t-[#B4A2F6]">
-        <div className="container mx-auto inline-flex justify-between items-center">
-          &#169; Copyright {currentYear} | Kodewarlock{" "}
-          <Link href="#kodewarlock" className="border border-[#B4A2F6] p-3">
-            <ArrowBigUp size={30} />
+      <footer className="bg-brutal-black text-brutal-white w-full px-6 md:px-12 py-6 border-t-brutal-thick">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+          <div className="font-space font-bold text-lg">
+            &#169; {currentYear} Kodewarlock | Built with ❤️
+          </div>
+          <Link href="#kodewarlock">
+            <motion.div
+              whileHover={{ y: -5, scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="bg-brutal-yellow text-brutal-black border-brutal shadow-brutal p-3 hover:shadow-brutal-pink transition-all cursor-pointer"
+            >
+              <ArrowUp size={28} />
+            </motion.div>
           </Link>
         </div>
       </footer>
